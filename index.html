@@ -4,13 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+            <!-- manrope  google font setup -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+            <!-- daisyui and tailwindcss -->
+            <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script>
+                tailwind.config = {
+                  theme: {
+                    extend: {
+                      colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#ABEF5F',
+                        'color-secondary': 'rgba(171, 239, 95, 0.5)',
+                        
+                      }
+                    }
+                  }
+                }
+              </script>
+          <style>
+           .manrope-normal{
+                  font-family: "Manrope", sans-serif;
+                    }
+         </style>
 </head>
-<body>
+<body class="manrope-normal mx-auto">
+    <!-- header section here -->
     <header>
-        <nav></nav>
+        <!-- nav section here -->
+        <nav class="px-3 md:px-6 mx-auto bg-gradient-to-b from-orange-50">
+            <div class="navbar justify-between pt-4">
+                <div>
+                    <a class="text-3xl font-extrabold" href="#"><i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45 mr-2"></i>Rinterio</a>
+                </div>
+                <div class="hidden lg:block lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-extrabold" href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="hidden md:block">
+                    <i class="fa-solid fa-magnifying-glass mr-6 p-2 bg-white rounded-full"></i>
+                    <i class="fa-solid fa-cart-shopping mr-6 p-2 bg-white rounded-full"></i>
+                    <button class=" btn bg-color-primary text-5 text-[#1C1C1C] font-[800] py-3 px-5 rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right bg-black text-white p-1 rounded-full -rotate-45"></i></button>
+                  </div>
+                  <i class="fa-solid fa-bars lg:hidden"></i>
+                </div>
+                <!-- banner section here -->
+                 <div class="hero">
+                    <div class="text-center">
+                        <div class="flex justify-center">
+                            <img class="pt-4 pb-4 md:pt-8" src="assets/banner.png" alt="">
+                        </div>
+                        <div class="md:mx--28 pb-12 md:pb-28">
+                            <h1 class="text-2xl md:text-6xl text-[#212121] px-4 md:px-16 font-extrabold">A barn house of this design has a striking appearance</h1>
+                            <p class="py-6 md:px-56 font-[500] ">
+                                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                            </p>
+                            <button class="btn bg-color-secondary text-xl font-bold py-3 px-6">View Details<i class="fa-solid fa-arrow-right bg-color-primary p-1 rounded-full -rotate-45"></i></button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </nav>
     </header>
+    <!-- main section here -->
     <main>
-
+        <!-- About Us section -->
+        <section>
+            <div class=" absolute z-10 -bottom-56 left-32 hidden lg:block border-dashed border-2 py-6">
+             <img class="
+             " src="./assets/Vector.png">
+            </div>
+             <div class="hero bg-base-200 relative">
+               <div class="hero-content flex-col lg:flex-row pt-8 md:pt-16">
+                 <div class="pl-18 ">
+                  <div class="text-center  md:text-start">
+                   <div class="py-10">
+                     <button class=" bg-white rounded-xl py-2 px-6"><i class="fa-solid fa-arrow-right pr-2"></i>About Us</button>
+                    </div>
+                     
+                     <h1 class="text-2xl md:text-4xl font-bold">We design thoughtful, liveable spaces</h1>
+                     <p class="py-6 pb-10">
+                       At Rinterio, we believe that architecture is more than just building structures; it's about creating spaces that inspire, function, and endure. Our passion for design is matched only by our commitment to excellence, ensuring that every project we undertake is a perfect blend of form and function.
+                     </p>
+                  </div>
+                   <div>
+                     <div class="flex bg-white mb-8 gap-3 p-6 rounded-xl items-center">
+                       <div>
+                         <img src="./assets/commercial.png" alt="">
+                       </div>
+                       <div>
+                         <h3 class="font-extrabold text-xl">Commercial</h3>
+                       <p>Highlight your landscape architecture projects, showcasing outdoor spaces that seamlessly integrate with their surroundings.</p>
+                       </div>
+                     </div>
+                     <div class="flex bg-white gap-3 p-6 rounded-xl items-center">
+                       <div>
+                         <img src="./assets/residential.png" alt="">
+                       </div>
+                       <div>
+                         <h3 class="font-extrabold text-xl">Residential</h3>
+                       <p>Explore a range of interior design projects that reflect your expertise in crafting elegant and functional living spaces.</p>
+                       </div>
+                   </div>  
+                   </div>                  
+                 </div>
+                 <img
+                 src="./assets/Rectangle.png"
+                 class=" rounded-lg shadow-2xl" />
+               </div>
+             </div>
+           </section>
     </main>
     <footer>
 
